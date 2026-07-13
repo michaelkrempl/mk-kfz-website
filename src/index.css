@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/ibm-plex-sans/400.css";
+@import "@fontsource/ibm-plex-sans/500.css";
+@import "@fontsource/ibm-plex-sans/600.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+@theme {
+  /* Werkstatt-Farbsystem: kühles Blau-Grau auf Papier-Hell, wie von der
+     Geschäftsführung bestätigt (siehe MKK-4 Rückfrage "design"). Ein
+     gedecktes Rostrot dient als sparsam eingesetzter Signatur-Akzent,
+     angelehnt an Bremssättel/Rückleuchten auf den Werkstattfotos. */
+  --color-paper: #f2f4f5;
+  --color-paper-raised: #e8ebec;
+  --color-ink: #16232e;
+  --color-ink-soft: #4c5c67;
+  --color-steel: #33526a;
+  --color-steel-dark: #23394a;
+  --color-hairline: #c9d2d6;
+  --color-caliper: #a4402d;
+
+  --font-display: "Space Grotesk", "Arial Narrow", sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper font-body text-ink antialiased;
+}
+
+/* Feines Blaupausen-Raster als ruhiger Hintergrundtextur-Akzent. */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--color-ink) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-ink) 5%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-[0.18em] text-steel uppercase;
+}
+
+/* Werkstatt-Anhänger: Signaturelement, angelehnt an einen Reparatur-Auftragsanhänger. */
+.job-tag {
+  @apply relative border border-hairline bg-paper font-mono text-xs tracking-[0.1em] text-ink-soft uppercase shadow-sm;
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+
+.job-tag::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: var(--color-paper);
+  border: 1px solid var(--color-hairline);
+}
