@@ -63,9 +63,13 @@ installiert wird.
   Schreibzugriff auf den Produktivserver geben. Veröffentlichung erfolgt
   ausschließlich manuell per rsync durch die Geschäftsführung, nach expliziter
   Freigabe.
-- **Go-Live-Blocker:** keine mehr offen. Steuernummer und Handwerkskammer
-  (München und Oberbayern) sind seit 2026-07-13 im Impressum eingetragen,
-  beides auf MKK-4 bestätigt. GitHub-Repo-Setup bleibt auf Wunsch der
-  Geschäftsführung „später" — bis dahin nur lokal versioniert. Die Seite
-  wartet nur noch auf die manuelle Veröffentlichung durch die
-  Geschäftsführung (rsync auf den VPS).
+- **Go-Live-Blocker:** keine mehr offen. Umsatzsteuer-Identifikationsnummer
+  (NICHT die private Steuernummer) und Handwerkskammer (München und
+  Oberbayern) sind seit 2026-07-13 im Impressum eingetragen, beides auf
+  MKK-4 bestätigt. Die Seite ist seit 2026-07-13 live unter mk-kfz.net.
+- **Repo-Zugriff:** github.com/michaelkrempl/mk-kfz-website (privat) ist
+  jetzt die maßgebliche Quelle. Die lokale Historie wurde neu aufgesetzt
+  (frischer `git init`, ein sauberer Initial-Commit vom bereinigten Stand),
+  weil eine ältere Historie eine Steuernummer enthielt — siehe MKK-6.
+  Deployment bleibt ausschließlich manueller Schritt der Geschäftsführung
+  (`./deploy.sh`, rsync auf den VPS) — kein SSH-/CI-Zugriff für Agenten.
