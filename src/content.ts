@@ -10,12 +10,11 @@
 // - Öffnungszeiten: "Nach Vereinbarung" (auf der Visitenkarte nicht vermerkt).
 // - Leistungsliste: wie vorgeschlagen bestätigt.
 //
-// Der "Über uns"-Text (aboutText) ist NICHT final freigegeben. Die
-// Geschäftsführung hat am 2026-07-12 "Nein, anpassen" gewählt, aber nie
-// gesagt, was konkret geändert werden soll. Die Streichung von "geprüfter"
-// (Commit d0ef026) war eine Annahme dieses Agenten, keine bestätigte
-// Korrektur der Geschäftsführung — die frühere Kommentierung als "final
-// freigegeben" war daher falsch. Gezielte Rückfrage läuft auf MKK-6.
+// Der "Über uns"-Text (aboutText) ist seit 2026-07-14 final freigegeben:
+// auf die gezielte Rückfrage aus MKK-6 (Ton/Länge/Inhalt/Formulierung?) hat
+// die Geschäftsführung per Kommentar auf MKK-4 geantwortet: "Der Text
+// bleibt so wie er ist." Der aktuelle Wortlaut ist damit bestätigt, keine
+// weitere Änderung nötig.
 
 export const business = {
   brandName: 'MK-KFZ',
@@ -45,7 +44,7 @@ export const business = {
   berufsrechtLink: 'https://www.gesetze-im-internet.de/hwo/',
 }
 
-// Aktueller Stand, aber ungeklärt ob final — siehe Kommentar oben und MKK-6.
+// Final freigegeben am 2026-07-14 (siehe Kommentar oben).
 export const aboutText =
   'Der Kfz-Meisterbetrieb MK-KFZ steht für unabhängige, ehrliche und fachkundige ' +
   'Fahrzeugtechnik – mit besonderer Erfahrung bei Porsche, Sportwagen und Oldtimern. ' +
