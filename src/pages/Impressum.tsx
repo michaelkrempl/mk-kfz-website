@@ -13,8 +13,8 @@ export function Impressum() {
         <section>
           <h2 className="eyebrow">Anbieter</h2>
           <p className="mt-2 text-ink">{business.legalName}</p>
-          <p className="text-ink">{business.street}</p>
-          <p className="text-ink">{business.zipCity}</p>
+          <p className="text-ink">{business.registeredOfficeStreet}</p>
+          <p className="text-ink">{business.registeredOfficeZipCity}</p>
         </section>
 
         <section>

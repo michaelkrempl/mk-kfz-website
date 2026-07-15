@@ -13,8 +13,8 @@ export function Datenschutz() {
         <section>
           <h2 className="eyebrow">1. Verantwortliche Stelle</h2>
           <p className="mt-2 text-ink">{business.legalName}</p>
-          <p className="text-ink">{business.street}</p>
-          <p className="text-ink">{business.zipCity}</p>
+          <p className="text-ink">{business.registeredOfficeStreet}</p>
+          <p className="text-ink">{business.registeredOfficeZipCity}</p>
           <p className="text-ink">E-Mail: {business.email}</p>
         </section>
 

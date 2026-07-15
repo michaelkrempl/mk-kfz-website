@@ -19,17 +19,19 @@
 // legalName am 2026-07-15 auf MKK-7 per verbindlicher Anweisung korrigiert:
 // "Michael Krempl KFZ.-Meisterwerkstatt" (vorher fälschlich "... – Freie
 // Porschewerkstatt"). Die auf MKK-7 ebenfalls verlangte Trennung von
-// Firmensitz (Impressum) und Werkstattadresse (Kontaktseite) ist NOCH NICHT
-// umgesetzt: der Auftrag nannte dafür nur Platzhalter ("[FIRMENSITZ ...]",
-// "[WERKSTATTADRESSE ...]"), keine echten Adressen. street/zipCity bleiben
-// bis zur Klärung unverändert die einzige, für Impressum UND Kontaktseite
-// gemeinsam genutzte Adresse.
+// Firmensitz (Impressum/Datenschutz) und Werkstattadresse (Kontaktseite) ist
+// am 2026-07-15 nach Rückfrage mit den von der Geschäftsführung genannten
+// echten Adressen umgesetzt worden (Antwort auf die Rückfrage aus MKK-7).
 
 export const business = {
   brandName: 'MK-KFZ',
   legalName: 'Michael Krempl KFZ.-Meisterwerkstatt',
-  street: 'Ingolstädter Str. 172, Halle 12',
-  zipCity: '80939 München',
+  // Firmensitz: ladungsfähige Anschrift für Impressum und Datenschutz-Verantwortlichen.
+  registeredOfficeStreet: 'Waldvögeleinstraße 4',
+  registeredOfficeZipCity: '80995 München',
+  // Werkstattadresse: abweichender Standort der Werkstatt, für Kontakt/Anfahrt.
+  workshopStreet: 'Ingolstädter Straße 172, Halle 12',
+  workshopZipCity: '80939 München',
   phone: '0172 8918193',
   email: 'mk-kfz@t-online.de',
   openingHours: 'Nach Vereinbarung',

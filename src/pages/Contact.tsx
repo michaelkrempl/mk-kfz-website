@@ -5,7 +5,7 @@ import { PageHeader } from '../components/PageHeader'
 export function Contact() {
   const mapsUrl =
     'https://www.google.com/maps/dir/?api=1&destination=' +
-    encodeURIComponent(business.street + ', ' + business.zipCity)
+    encodeURIComponent(business.workshopStreet + ', ' + business.workshopZipCity)
 
   usePageMeta(
     'Kontakt & Anfahrt',
@@ -22,9 +22,9 @@ export function Contact() {
             <div>
               <h2 className="eyebrow">Adresse</h2>
               <p className="mt-2 text-lg text-ink">
-                {business.street}
+                {business.workshopStreet}
                 <br />
-                {business.zipCity}
+                {business.workshopZipCity}
               </p>
             </div>
 
@@ -57,7 +57,7 @@ export function Contact() {
           <div>
             <h2 className="eyebrow">Anfahrt</h2>
             <p className="mt-2 text-ink-soft">
-              {business.street}, {business.zipCity}
+              {business.workshopStreet}, {business.workshopZipCity}
             </p>
             <a
               className="mt-4 inline-block border border-hairline bg-white px-5 py-3 text-ink shadow-sm transition hover:bg-surface-soft"
