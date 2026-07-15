@@ -25,7 +25,7 @@
 
 export const business = {
   brandName: 'MK-KFZ',
-  legalName: 'Michael Krempl KFZ.-Meisterwerkstatt',
+  legalName: 'Michael Krempl Kfz.-Meisterbetrieb',
   // Firmensitz: ladungsfähige Anschrift für Impressum und Datenschutz-Verantwortlichen.
   registeredOfficeStreet: 'Waldvögeleinstraße 4',
   registeredOfficeZipCity: '80995 München',
