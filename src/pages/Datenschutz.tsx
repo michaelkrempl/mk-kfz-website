@@ -13,8 +13,8 @@ export function Datenschutz() {
         <section>
           <h2 className="eyebrow">1. Verantwortliche Stelle</h2>
           <p className="mt-2 text-ink">{business.legalName}</p>
-          <p className="text-ink">{business.registeredOfficeStreet}</p>
-          <p className="text-ink">{business.registeredOfficeZipCity}</p>
+          <p className="text-ink">{business.seatStreet}</p>
+          <p className="text-ink">{business.seatZipCity}</p>
           <p className="text-ink">E-Mail: {business.email}</p>
         </section>
 
@@ -39,13 +39,16 @@ export function Datenschutz() {
         </section>
 
         <section>
-          <h2 className="eyebrow">4. Anfahrtskarte (Google Maps)</h2>
+          <h2 className="eyebrow">4. Kartenlink (Google Maps)</h2>
           <p className="mt-2">
-            Auf der Seite „Kontakt &amp; Anfahrt“ binden wir eine Karte des Dienstes Google Maps
-            (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) ein.
-            Beim Aufruf dieser Seite stellt Ihr Browser eine Verbindung zu Servern von Google her,
-            wobei auch Ihre IP-Adresse übertragen werden kann. Weitere Informationen zur
-            Datenverarbeitung durch Google finden Sie in der{' '}
+            Auf der Seite „Kontakt &amp; Anfahrt“ binden wir Google Maps nicht direkt ein. Sie
+            finden dort lediglich einen Link „Route planen“, der Google Maps erst nach Ihrem
+            Klick in einem neuen Tab öffnet. Beim Aufruf unserer Seiten selbst werden keine
+            Daten an Google übertragen. Eine Verbindung zu Servern von Google
+            (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) –
+            wobei auch Ihre IP-Adresse übertragen werden kann – entsteht erst, wenn Sie diesen
+            Link aktiv anklicken. Weitere Informationen zur Datenverarbeitung durch Google
+            finden Sie in der{' '}
             <a
               href="https://policies.google.com/privacy"
               target="_blank"
